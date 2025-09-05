@@ -88,8 +88,8 @@ Response: {
 ### Analysis of Requirements
 
 **Key Requirements Identified:**
-- Exactly 2 users with fixed $500 wallets (no user management needed)
-- Equal 50/50 bill splitting (automatic calculation, no manual percentages)
+- Exactly 2 users with fixed $500 wallets, with the option to change wallet amounts for each user
+- Equal 50/50 bill splitting
 - Dual tracking: cash flow (wallet) vs spending (budget) 
 - Debt management between friends with settlement capability
 
@@ -119,7 +119,7 @@ Response: {
 
 ### Backend Design & API Structure
 
-**Clean Architecture:**
+**Architecture Design Choices:**
 ```
 API Layer (FastAPI routers) → Domain Models → Storage Layer
 ```
